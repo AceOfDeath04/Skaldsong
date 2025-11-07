@@ -1,0 +1,91 @@
+html{
+    background-color:black;
+}
+h1{
+    color:black;
+}
+.centered{
+    display:block;
+    margin: 0 auto;
+}
+/*Nav Menu*/
+
+#modernbricksmenu2{
+padding: 0;
+width: 100%;
+border-top: 20px solid #303030; /*Color theme*/
+background: transparent;
+min-height: 60px;
+}
+
+#modernbricksmenu2 ul{
+margin:0;
+/*margin-left: 100px; /*margin between first menu item and left browser edge*/
+padding: 0;
+list-style: none;
+}
+
+#modernbricksmenu2 li{
+display: inline;
+margin: 0 2px 0 0;
+padding: 0;
+text-transform:uppercase;
+}
+
+#modernbricksmenu2 a{
+float: left;
+display: block;
+font: bold 15px Arial;
+color: white;
+text-decoration: none;
+margin: 0 1px 0 0; /*Margin between each menu item*/
+padding: 13px 22px;
+background-color: black; /*Color theme*/
+border-left: 1px solid white;
+border-right: 1px solid white;
+border-bottom: 1px solid white;
+}
+
+#modernbricksmenu2 a:hover{
+background-color: #303030; /*Color theme*/
+color: white;
+}
+
+#modernbricksmenu2 #current a{ /*currently selected tab*/
+background-color: #303030; /*Brown color theme*/
+color: white;
+border-color: #303030; /*Brown color theme*/
+}
+#modernbricksmenu2 #current a:hover{
+  background-color: #303030;
+}
+#modernbricksmenu2 #current2 a{ /*currently selected tab*/
+background-color: #303030; /*Brown color theme*/
+color: white;
+border-color: #303030; /*Brown color theme*/
+}
+#modernbricksmenu2 #current3 a{ /*currently selected tab*/
+background-color: #303030; /*Brown color theme*/
+color: white;
+border-color: #303030; /*Brown color theme*/
+}
+#modernbricksmenu2 #current4 a{ /*currently selected tab*/
+background-color: #303030; /*Brown color theme*/
+color: white;
+border-color: #303030; /*Brown color theme*/
+}
+.hmbutton a:hover {
+  background-color: #303030;
+}
+#navbutton a:hover{
+  background-color: #303030;
+}
+.parent-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;    /* Centers vertically */
+}
+.bunch{
+    margin-right: 400px;
+    margin-left: 400px;
+}
