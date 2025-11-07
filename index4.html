@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skaldsong: Updates</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div id="modernbricksmenu2">
-    <ul>
+    <ul class="cinzel-decorative-bold">
         <li id="navbutton" class="hmbutton" style="margin-left: 1px"><a href="index.html" title="Home">Home</a></li>
         <li id="navbutton"><a href="index2.html" title="Guides">Guides</a></li>
         <li id="navbutton"><a href="index3.html" title="Gallery">Gallery</a></li>
@@ -20,7 +25,307 @@
 <hr>
 
 <img style="width:600px;" class="centered" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3808550/16a404298aaa9bcb984c16a6e2c35d0c0777c1f4/header.jpg?t=1761233070">
+<br>
+<div class="accordion-container">
+  <div class="accordion">
+    <input type="checkbox" id="accordion1">
+    <label for="accordion1">
+      <span>(Current)Skaldsong 1.4.8:</span>
+      <span class="arrow">▶</span>
+    </label>
+    <div class="accordion-content bold">
+      <ul>
+        <li>Added Content Vault. (You can now export characters/locations/items between campaigns)</li>
+        <br>
+        <li>Added attaching music to a location, so whenever the party travels there, the music will change to the attached .mp3.</li>
+        <br>
+        <li>Added packaging music into campaigns, so music can be attached and shared.</li>
+        <li>Added attaching Characters/Locations/Objects to lore entries to add them to context when the lore entry is added.</li>
+        <br>
+        <li>Added a game setting option to indent each paragraph in chat.</li>
+        <br>
+        <li>Added a game setting option to toggle playing location music.</li>
+        <br>
+        <li>Adjusted how the chatbox functions when resizing to prevent major resize lag.</li>
+        <br>
+        <li>Adjusted prompt to prevent modify_relationship tag from appearing in narrative.</li>
+      </ul>
+    </div>
+  </div>
 
+  <div class="accordion">
+    <input type="checkbox" id="accordion2">
+    <label for="accordion2">
+      <span>Skaldsong 1.4.7:</span>
+      <span class="arrow">▶</span>
+    </label>
+    <div class="accordion-content bold">
+      <ul>
+        <li>Added toggle in character generation to assign character to current player upon generation.</li>
+        <br>
+        <li>Added location hierarchy in location info window at top of overview.</li>
+        <br>
+        <li>Added windows now snap when resizing.</li>
+        <br>
+        <li>Added stats to combatants.</li>
+        <br>
+        <li>Added the ability to link characters to combatants in the combantant info window.</li>
+        <br>
+        <li>Improved character assignment code for MP.</li>
+        <br>
+        <li>Fixed description hovers leaking thru tabs.</li>
+        <br>
+        <li>Fixed Recenter on Party inverting the Y-axis.</li>
+      </ul>
+    </div>
+  </div>
 
+  <div class="accordion">
+    <input type="checkbox" id="accordion3">
+    <label for="accordion3">
+      <span>Skaldsong 1.4.6:</span>
+      <span class="arrow">▶</span>
+    </label>
+    <div class="accordion-content bold">
+        <ul>
+            <li>Added Object Memory to Locations, Characters, and Items. (Think an individual AI Notes scratch pad in every object!)</li>
+            <br>
+            <li>Added faction selection to Character/Location generator.</li>
+            <br>
+            <li>Added users can use the Game Master input if assigned Admin permissions.</li>
+            <br>
+            <li>Added 'Continue' button in the chat box to automatically continue the last returned AI message response.</li>
+            <br>
+            <li>Added loop button to music manager to loop the current playing track.</li>
+            <br>
+            <li>Adjusted tag handling to future-proof possible capitilization issues.</li>
+            <br>
+            <li>Fixed 'Stop TTS' button from disappearing before TTS has finished playing.</li>
+            <br>
+            <li>Fixed player assign notifications from being spammed by a connected user.</li>
+            <br>
+            <li>Fixed a crash that occured when trying to subscribe to a campaign thru the in-game UI.</li>
+            <br>
+            <li>Fixed quest requirement completion status from not reordering with their quest requirements when re-ordering completion requirement order.</li>
+            <br>
+            <li>Fixed history field from being unable to scroll all the way (Noticable with longer games).</li>
+        </ul>
+    </div>
+  </div>
+  <div class="accordion">
+    <input type="checkbox" id="accordion4">
+    <label for="accordion4">
+      <span>Skaldsong 1.4.5:</span>
+      <span class="arrow">▶</span>
+    </label>
+    <div class="accordion-content bold">
+      <ul>
+        <li>Adjusted omniscient prompt to try and have characters not know all of what is on a character except what is equipped or already known.</li>
+        <br>
+        <li>Fixed cases where tags would fail to parse and would output to the narrative.</li>
+        <br>
+        <li>Fixed opening an already opened relationship opening a new window.</li>
+        <br>
+        <li>Fixed a case where relationship modification would fail.</li>
+        <br>
+        <li>Backend update.</li>
+      </ul>
+    </div>
+  </div>
+    <div class="accordion">
+    <input type="checkbox" id="accordion5">
+    <label for="accordion5">
+      <span>Skaldsong 1.4.4::</span>
+      <span class="arrow">▶</span>
+    </label>
+    <div class="accordion-content bold">
+      <ul>
+        <li>Added new Campaign: God Games, a modern-day high fantasy war of the Gods.</li>
+        <br>
+        <li>Added new Campaign: Forever DM, play as a DM in your AI-DM game.</li>
+        <br>
+        <li>Added Campaign Creator tab to campaign select window.</li>
+        <br>
+        <li>Added tab to Programmatic Start in campaign select window.</li>
+        <br>
+        <li>Added append functionality to game rules, settings, genre, and gameloop edit tags.</li>
+        <br>
+        <li>Added game master prompts can now add or edit lorebook entries.</li>
+        <br>
+        <li>Added Add_Starter_Message tag for programmatic campaign creation.</li>
+        <br>
+        <li>Adjusted game rules to (hopefully) remove omniscient character behavior.</li>
+        <br>
+        <li>Adjusted Move_To_Location tag to be Move_Character_To_Location and Move_Party_To_Location.</li>
+        <br>
+        <li>Adjusted tag parser to better differentiate actual tags and non-tags, preventing unwanted output to chat.</li>
+        <br>
+        <li>Fixed context menu not highlighting over hovering.</li>
+        <br>
+        <li>Fixed characters and locations not removing themselves from a faction when deleted.</li>
+        <br>
+        <li>Fixed TTS Generating message not disappearing.</li>
+      </ul>
+    </div>
+  </div>
+    <div class="accordion">
+    <input type="checkbox" id="accordion6">
+    <label for="accordion6">
+      <span>(Beta)Skaldsong 1.4.4:</span>
+      <span class="arrow">▶</span>
+    </label>
+    <div class="accordion-content bold">
+      <ul>
+        <li>Added Campaign Creator tab to campaign select window.</li>
+        <br>
+        <li>Added tab to Programmatic Start in campaign select window.</li>
+        <br>
+        <li>Added append functionality to game rules, settings, genre, and gameloop edit tags.</li>
+        <br>
+        <li>Adjusted game rules to (hopefully) remove omniscient character behavior.</li>
+        <br>
+        <li>Adjusted Move_To_Location tag to be Move_Character_To_Location and Move_Party_To_Location.</li>
+        <br>
+        <li>Adjusted tag parser to better differentiate actual tags and non-tags, preventing unwanted output to chat.</li>
+        <br>
+        <li>Fixed context menu not highlighting over hovering.</li>
+        <br>
+        <li>Fixed characters and locations not removing themselves from a faction when deleted.</li>
+        <br>
+        <li>Fixed TTS Generating message not disappearing.</li>
+      </ul>
+    </div>
+  </div>
+    <div class="accordion">
+    <input type="checkbox" id="accordion7">
+    <label for="accordion7">
+      <span>Skaldsong 1.4.3:</span>
+      <span class="arrow">▶</span>
+    </label>
+    <div class="accordion-content bold">
+      <ul>
+        <li>Added Custom Programmatic Campaign Starts (Advanced feature for campaign makers!)</li><br>
+        <li>Added documentation for CPC starts, accessible in the window.</li><br>
+        <li>Added a manual input option for generating images for locations.</li><br>
+        <li>Added: Object IDs are now shown in the title bar of their info window. (Characters, Locations, etc.)</li><br>
+        <li>Added a tag to assign characters to players.</li><br>
+        <li>Added: Pinning the Game Master input window will no longer close the window when sending a message.</li><br>
+        <li>Added confirmation windows for deleting/clearing lists.</li><br>
+        <li>Adjusted image gen for characters and locations.</li><br>
+        <li>Adjusted starting campaigns to use new campaign programmatic stars.</li><br>
+        <li>Adjusted some starting campaigns to fix map issues.</li><br>
+        <li>Fixed a bug where object list fields would break tooltips on other fields.</li>
+    </ul>
+    </div>
+  </div>
+    <div class="accordion">
+    <input type="checkbox" id="accordion8">
+    <label for="accordion8">
+      <span>(Beta)Skaldsong 1.4.3:</span>
+      <span class="arrow">▶</span>
+    </label>
+    <div class="accordion-content bold">
+      <ul>
+        <li>Added Custom Programmatic Campaign Starts (Advanced feature for campaign makers!)</li><br>
+        <li>Added a manual input option for generating images for locations.</li><br>
+        <li>Added: Object IDs are now shown in the title bar of their info window. (Characters, Locations, etc.)</li><br>
+        <li>Added a tag to assign characters to players.</li><br>
+        <li>Adjusted image gen for characters and locations.</li><br>
+        <li>Fixed a bug where object list fields would break tooltips on other fields.</li>
+      </ul>
+    </div>
+  </div>
+    <div class="accordion">
+    <input type="checkbox" id="accordion9">
+    <label for="accordion9">
+      <span>Skaldsong 1.4.2:</span>
+      <span class="arrow">▶</span>
+    </label>
+    <div class="accordion-content bold">
+      <ul>
+        <li>Reworked Campaign exporting and workshop management.</li><br>
+        <li>Adjusted backend changes for game master requests.</li><br>
+        <li>Adjusted relationships to hopefully have a more subtle affect on interactions.</li><br>
+        <li>Fixed: Info windows should refresh the object instance they are attached to when a game state is loaded.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="accordion">
+    <input type="checkbox" id="accordion10">
+    <label for="accordion10">
+      <span>Skaldsong 1.4.1:</span>
+      <span class="arrow">▶</span>
+    </label>
+    <div class="accordion-content bold">
+      <ul>
+        <li>Adjusted faction currency modification logic.</li><br>
+        <li>Adjusted multi-line text fields to by default have more idle max lines.</li><br>
+        <li>Fixed UI scaling not appropriately scaling the side bar in the game settings.</li><br>
+        <li>Fixed game master input sending the input when editing the text.</li><br>
+        <li>Fixed a crash that can happen when summing up currency in the quest info window.</li><br>
+        <li>Fixed a crash that happened from the image input in the character generate window not resetting properly.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="accordion">
+    <input type="checkbox" id="accordion11">
+    <label for="accordion11">
+      <span>Skaldsong 1.4.0:</span>
+      <span class="arrow">▶</span>
+    </label>
+    <div class="accordion-content bold">
+      <ul>
+        <li>Added Generate Character from Image in generate window.</li><br>
+        <li>Added music playlists.</li><br>
+        <li>Added shuffle to music manager.</li><br>
+        <li>Reworked Campaign Info window.</li><br>
+        <li>Adjusted content generation to pass 'Always Included' lore.</li>
+      </ul>
+    </div>
+      </div>
+  <div class="accordion">
+    <input type="checkbox" id="accordion12">
+    <label for="accordion12">
+      <span>Skaldsong 1.3.9:</span>
+      <span class="arrow">▶</span>
+    </label>
+    <div class="accordion-content bold">
+      <ul>
+        <li>Added pinning windows (Hit the P symbol in the top bar) to prevent them from being resized or moved.</li><br>
+        <li>Added windows snapping to the edge of the screen, the edge of other windows, and the chatbox.</li><br>
+        <li>Reworked the Game Settings window.</li><br>
+        <li>Fixed being unable to delete factions from the faction window.</li><br>
+        <li>Fixed another case of token estimation failing.</li><br>
+        <li>Fixed being unable to change music volume from the game settings.</li>
+
+      </ul>
+    </div>
+      <div class="accordion">
+    <input type="checkbox" id="accordion13">
+    <label for="accordion13">
+      <span>Skaldsong 1.3.8:</span>
+      <span class="arrow">▶</span>
+    </label>
+    <div class="accordion-content bold">
+      <ul>
+        <li>Added Game Master input to the chat box. Click the 'Game Master' button and you can send a direct command to the AI.</li><br>
+        <li>Added AI Generation log to the chat box. Click the "Generation Log" button to view the list of AI generated tags in your current session.</li><br>
+        <li>Added a maintenance notifier when things might be iffy.</li><br>
+        <li>Reworked the Campaign window.</li><br>
+        <li>Reworked the Guided Start window.</li><br>
+        <li>Reworked the Setting window.</li><br>
+        <li>Adjusted main menu to be less 'noisy'.</li><br>
+        <li>Adjusted themes to standardize some colors.</li><br>
+        <li>Adjusted: Disabled left-click pan on world map and WASD pan. (Middle mouse button pan and arrow keys still enabled.)</li><br>
+        <li>Fixed not being able to insert new relationships when right clicking an existing relationship.</li><br>
+        <li>Fixed a bug where a generated item would show as generating forever.</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
 </body>
 </html>
