@@ -1,0 +1,199 @@
+@font-face {
+  font-family: 'Cinzel Decorative';
+  src: url('fonts/Cinze_lDecorative/CinzelDecorative-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cinzel Decorative';
+  src: url('fonts/Cinzel_Decorative/CinzelDecorative-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+html{
+    background-color:black;
+}
+h1{
+    color:black;
+}
+.centered{
+    display:block;
+    margin: 0 auto;
+}
+/*Nav Menu*/
+
+#modernbricksmenu2{
+padding: 0;
+width: 100%;
+border-top: 20px solid #303030; /*Color theme*/
+background: transparent;
+min-height: 60px;
+}
+
+#modernbricksmenu2 ul{
+margin:0;
+/*margin-left: 100px; /*margin between first menu item and left browser edge*/
+padding: 0;
+list-style: none;
+}
+
+#modernbricksmenu2 li{
+display: inline;
+margin: 0 2px 0 0;
+padding: 0;
+text-transform:uppercase;
+}
+
+#modernbricksmenu2 a{
+float: left;
+display: block;
+font: bold 15px;
+color: white;
+text-decoration: none;
+margin: 0 1px 0 0; /*Margin between each menu item*/
+padding: 13px 22px;
+background-color: black; /*Color theme*/
+border-left: 1px solid white;
+border-right: 1px solid white;
+border-bottom: 1px solid white;
+}
+
+#modernbricksmenu2 a:hover{
+background-color: #303030; /*Color theme*/
+color: white;
+}
+
+#modernbricksmenu2 #current a{ /*currently selected tab*/
+background-color: #303030; /*Brown color theme*/
+color: white;
+border-color: #303030; /*Brown color theme*/
+}
+#modernbricksmenu2 #current a:hover{
+  background-color: #303030;
+}
+#modernbricksmenu2 #current2 a{ /*currently selected tab*/
+background-color: #303030; /*Brown color theme*/
+color: white;
+border-color: #303030; /*Brown color theme*/
+}
+#modernbricksmenu2 #current3 a{ /*currently selected tab*/
+background-color: #303030; /*Brown color theme*/
+color: white;
+border-color: #303030; /*Brown color theme*/
+}
+#modernbricksmenu2 #current4 a{ /*currently selected tab*/
+background-color: #303030; /*Brown color theme*/
+color: white;
+border-color: #303030; /*Brown color theme*/
+}
+.hmbutton a:hover {
+  background-color: #303030;
+}
+#navbutton a:hover{
+  background-color: #303030;
+}
+.parent-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;    /* Centers vertically */
+}
+.bunch{
+    margin-right: 400px;
+    margin-left: 400px;
+}
+/*Font Style*/
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/*.cinzel-decorative-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}*/
+
+/*Accordion*/
+.accordion-container {
+  width: 600px;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Cinzel Decorative", serif;
+  box-sizing: border-box;
+}
+
+.accordion {
+  border-bottom: 1px solid #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.accordion input[type="checkbox"] {
+  display: none;
+}
+
+.accordion label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  user-select: none;
+  transition: background 0.3s;
+  border-bottom: 1px solid #444;
+  border-top: 1px solid #444;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+
+.accordion label:hover {
+  background: #ffffff;
+}
+
+.accordion label .arrow {
+  position: absolute;
+  right: 20px;  /* matches your padding */
+}
+
+.accordion .arrow {
+  transition: transform 0.3s ease;
+  font-size: 20px;
+}
+
+.accordion input:checked + label .arrow {
+  transform: rotate(90deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease, padding 0.2s ease;
+  background: #ffffff;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.accordion input:checked + label + .accordion-content {
+  max-height: 1000vh;
+  padding: 15px 20px;
+}
+
+/*Bold Text*/
+.bold{
+  font-weight: bold;
+}
